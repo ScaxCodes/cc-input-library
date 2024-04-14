@@ -3,35 +3,35 @@
 }
 
 .input {
+  --border-color: hsl(0, 0%, 70%);
+
   padding: 0.4em;
   margin: 3px;
-  border: 1px solid hsl(0, 0%, 70%);
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   outline: none;
   font-size: inherit;
 }
 
 .input:focus {
-  border-color: hsl(199, 100%, 60%);
-  box-shadow: 0 0 5px 0 hsl(199, 100%, 60%);
+  --border-color: hsl(199, 100%, 60%);
+  box-shadow: 0 0 5px 0 var(--border-color);
 }
 
 .success {
-  border-color: hsl(124, 70%, 40%);
+  --border-color: hsl(124, 70%, 40%);
 }
 
 .success:focus {
-  border-color: hsl(124, 70%, 60%);
-  box-shadow: 0 0 5px 0 hsl(124, 70%, 60%);
+  --border-color: hsl(124, 70%, 60%);
 }
 
 .error {
-  border-color: hsl(0, 70%, 40%);
+  --border-color: hsl(0, 70%, 40%);
 }
 
 .error:focus {
-  border-color: hsl(0, 70%, 60%);
-  box-shadow: 0 0 5px 0 hsl(0, 70%, 60%);
+  --border-color: hsl(0, 70%, 60%);
 }
 
 .large {
